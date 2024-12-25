@@ -4,19 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Testing\Fluent\Concerns\Has;
 
-class Reader extends Model
+class Customer extends Model
 {
     use HasFactory;
-    protected $fillbale = [
+
+    protected $fillable = [
         'name',
-        'birthday',
         'address',
         'phone',
+        'email'
     ];
-    public function borrows()
+
+    public function orders()
     {
-        return $this->hasMany(Borrow::class);
+        return $this->hasMany(Order::class);
     }
 }
