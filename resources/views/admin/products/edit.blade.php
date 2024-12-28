@@ -1,7 +1,7 @@
 @extends('admin.common.home-page')
 
 @section('content')
-    <h1>Chỉnh sửa Product</h1>
+    <h1>Chỉnh sửa Sản Phẩm</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
