@@ -36,7 +36,6 @@
                                 @endforeach
                             </select>
                         </div>
-
                         <button type="submit" class="btn btn-primary">Update</button>
                         <a href="{{ route('items.index') }}" class="btn btn-secondary">Cancel</a>
                     </form>
